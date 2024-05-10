@@ -28,10 +28,22 @@ nav{
 nav .logo{
     width: 90px;
 }
+@media screen and (max-width: 550px) {
+    nav .logo{width: 35px;}
+    
+}
 nav ul li{
     list-style: none;
     display: inline-block;
     margin-left: 40px;
+}
+@media screen and (max-width: 550px) {
+    nav ul li{
+        margin-left: 0;
+        list-style: none;
+        display: inline-block;
+    }
+    
 }
 nav ul li a{
     text-decoration: none;
@@ -39,6 +51,12 @@ nav ul li a{
     font-size: 25px;
  }
 
+ @media screen and (max-width: 550px){
+    nav ul li a{
+        text-decoration: none;
+        color: #916A4A;
+        font-size: 12px;}
+ }
 .content{
     text-align: center;
     justify-content: center;
@@ -50,6 +68,16 @@ nav ul li a{
     justify-content: center;
 
 }
+@media screen and (max-width: 550px){
+    .content h1{
+        font-size: 80px;
+        color: #916A4A;
+        font-weight: 600;
+        justify-content: center;
+    
+    }
+}
+
 .content a{
     text-decoration: none;
     display: inline-block;
